@@ -1,8 +1,14 @@
+
 <p style="color: green"><%= notice %></p>
+<div class="container">
+<h1>Événement crée</h1>
+  <%= render @evenement %>
 
-<%= render @evenement %>
+  <div class="d-flex justify-content-around">
+    <%= link_to "Editer", edit_evenement_path(@evenement), class:"btn" %>
+    <%= link_to "Voir les événements", evenements_path, class:"btn" %>
 
+    <%= button_to "Supprimer événement", @evenement, method: :delete, class:"btn btn-delete" %>
+  </div>
+</div>
 
-  <%= link_to "Changer cet évenement", edit_evenement_path(@evenement) %> | |
-  <%= link_to "Retour aux évenements", evenements_path %>
-  <%= button_to "Supprimer cet évenement", @evenement, method: :delete %>

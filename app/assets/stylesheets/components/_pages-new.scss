@@ -1,0 +1,30 @@
+h1{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.btn {
+  background-color:   #0000ff;
+  width: fit-content;
+  text-align: center;
+  color: white;
+  border-radius: 8px;
+}
+
+.btn:hover {
+  color: gray;
+  background-color:  #0000FF;
+}
+
+.btn-delete{
+  background-color:  red;
+  width: fit-content;
+  text-align: center;
+  color: white;
+  border-radius: 8px;
+}
+
+.btn-delete:hover {
+  color: darkgray;
+  background-color:  red;
+}
