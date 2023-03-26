@@ -1,6 +1,7 @@
 .navbar-lewagon {
   justify-content: space-between;
   background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.373);
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -21,7 +22,7 @@
 
 }
 
-.navbar-lewagon h1{
+.navbar-lewagon h3{
   font-size: 1.5rem;
   padding-top: 10px;
 }
