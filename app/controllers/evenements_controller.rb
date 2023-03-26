@@ -1,25 +1,22 @@
 class EvenementsController < ApplicationController
   before_action :set_evenement, only: %i[ show edit update destroy ]
 
-  # GET /evenements or /evenements.json
   def index
     @evenements = Evenement.all
   end
 
-  # GET /evenements/1 or /evenements/1.json
   def show
   end
 
-  # GET /evenements/new
+
   def new
     @evenement = Evenement.new
   end
 
-  # GET /evenements/1/edit
+
   def edit
   end
 
-  # POST /evenements or /evenements.json
   def create
     @evenement = Evenement.new(evenement_params)
 
@@ -34,7 +31,6 @@ class EvenementsController < ApplicationController
     end
   end
 
-  # PATCH/PUT /evenements/1 or /evenements/1.json
   def update
     respond_to do |format|
       if @evenement.update(evenement_params)
@@ -47,7 +43,6 @@ class EvenementsController < ApplicationController
     end
   end
 
-  # DELETE /evenements/1 or /evenements/1.json
   def destroy
     @evenement.destroy
 
@@ -58,13 +53,11 @@ class EvenementsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
     def set_evenement
       @evenement = Evenement.find(params[:id])
     end
 
-    # Only allow a list of trusted parameters through.
     def evenement_params
-      params.require(:evenement).permit(:title, :date, :participant, :content)
+      params.require(:evenement).permit(:title, :date, :participant, :content, :photo)
     end
 end

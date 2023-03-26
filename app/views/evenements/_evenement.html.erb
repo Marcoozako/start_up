@@ -1,22 +1,26 @@
-<div id="<%= dom_id evenement %>">
-  <p>
-    <strong>Title:</strong>
-    <%= evenement.title %>
-  </p>
+<div id="<%= dom_id evenement %>", class='col1'>
+  <div class="row">
+      <p>
+        <strong>Titre:</strong>
+        <%= evenement.title %>
+      </p>
 
-  <p>
-    <strong>Date:</strong>
-    <%= evenement.date %>
-  </p>
+      <p>
+        <strong>Date:</strong>
+        <%= evenement.date %>
+      </p>
+      <p>
+        <%= image_tag evenement.photo, height: 300, width: 400, crop: :fill %>
+      </p>
 
-  <p>
-    <strong>Participant:</strong>
-    <%= evenement.participant %>
-  </p>
+      <p>
+        <strong>Nombre de participants:</strong>
+        <%= evenement.participant %>
+      </p>
 
-  <p>
-    <strong>Content:</strong>
-    <%= evenement.content %>
-  </p>
-
+      <p>
+        <strong>Description:</strong>
+        <%= evenement.content %>
+      </p>
+  </div>
 </div>

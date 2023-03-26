@@ -2,9 +2,7 @@
 
 <%= render @evenement %>
 
-<div>
-  <%= link_to "Edit this evenement", edit_evenement_path(@evenement) %> |
-  <%= link_to "Back to evenements", evenements_path %>
 
-  <%= button_to "Destroy this evenement", @evenement, method: :delete %>
-</div>
+  <%= link_to "Changer cet évenement", edit_evenement_path(@evenement) %> | |
+  <%= link_to "Retour aux évenements", evenements_path %>
+  <%= button_to "Supprimer cet évenement", @evenement, method: :delete %>

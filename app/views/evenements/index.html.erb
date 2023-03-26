@@ -6,9 +6,10 @@
   <% @evenements.each do |evenement| %>
     <%= render evenement %>
     <p>
-      <%= link_to "Show this evenement", evenement %>
+      <%= link_to "Voir cet evenement", evenement %>
     </p>
   <% end %>
 </div>
 
-<%= link_to "New evenement", new_evenement_path %>
+| <%= link_to "Nouvel evenement", new_evenement_path %> |
+<%= link_to "Retour acceuil", root_path %> |
