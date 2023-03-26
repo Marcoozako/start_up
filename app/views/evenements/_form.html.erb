@@ -8,9 +8,15 @@
     <%= f.input :date %>
     <%= f.input :participant %>
     <%= f.input :content %>
+    <%= f.input :photo, as: :file, label: 'Photo' %>
   </div>
 
-  <div class="form-actions">
-    <%= f.button :submit %>
+  <div class="d-flex justify-content-around">
+    <div>
+    <%= f.button :submit, class:"btn" %>
+    </div>
+    <div >
+    <%= link_to "Retour événements", evenements_path, class:"btn"%>
+    </div>
   </div>
 <% end %>
